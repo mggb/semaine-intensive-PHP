@@ -1,0 +1,17 @@
+.register{
+  height: 100vh;
+  width: 100%;
+  background: grey;
+}
+.image{
+  text-align: center;
+  height: 200px;
+}
+.title_subscribe{
+  text-align: center;
+  font-size: 35px;
+}
+
+.input{
+  display: flex;
+}

@@ -47,7 +47,7 @@ try {
     // var_dump($_POST);
 
     if (!empty($_POST['submit'])) {
-        $requete = "INSERT INTO profil (prenom, nom, ville, email, `mot de passe`) VALUES (?, ?, ?, ?, ?);";
+        $requete = "INSERT INTO profil (prenom, nom, ville, email, password) VALUES (?, ?, ?, ?, ?);";
 
         $stmt = $conn->prepare($requete);
         $stmt->execute([

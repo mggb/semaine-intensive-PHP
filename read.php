@@ -1,14 +1,11 @@
 <?php
-try {
-    $conn = new PDO('mysql:dbname=semaine_intensive;host=localhost', 'root', 'root');
-} catch (PDOException $exception) {
-    die($exception->getMessage());
-}
-
+session_start();
+require_once 'Conect.php';
 ?>
 
 
-    <html>
+
+<html>
     <head>
         <meta charset="utf-8">
         <title>Intranet v12</title>

@@ -1,12 +1,11 @@
 <?php
-try {
-    $conn = new PDO('mysql:dbname=semaine_intensive;host=localhost', 'root', 'root');
-} catch (PDOException $exception) {
-    die($exception->getMessage());
-}
-
+session_start();
+require_once 'Conect.php';
+require_once  'header_conect.php';
 ?>
-    <form  action="verifie.php" method="post">
+
+
+<form  action="verifie.php" method="post">
 
         <input type="text" value="<?=$_POST["button_modifie"]?>" name="id">
 <input type="text" name="resume" size="12" placeholder="resume">

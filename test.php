@@ -1,10 +1,9 @@
-<?php
-try {
-    $conn = new PDO('mysql:dbname=semaine_intensive;host=localhost', 'root', 'root');
-} catch (PDOException $exception) {
-    die($exception->getMessage());
-}
 
+
+<?php
+session_start();
+require_once 'Conect.php';
+require_once  'header_conect.php';
 ?>
 
 <?php
@@ -25,7 +24,6 @@ $increment =" SELECT
             <table>
                 <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
                 <tr>
-                    <td><?=$row["id"]?></td>
                     <td><?=$row["competence"]?></td>
                     <td><?=$row["intitule"]?></td>
                     <td><?=$row["resume"]?></td>

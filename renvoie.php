@@ -1,11 +1,8 @@
 <?php
-try {
-    $conn = new PDO('mysql:dbname=semaine_intensive;host=localhost', 'root', 'root');
-} catch (PDOException $exception) {
-    die($exception->getMessage());
-}
-
+session_start();
+require_once 'Conect.php';
 ?>
+
 
 
 
@@ -36,6 +33,8 @@ if ((isset($_POST['username']) && !empty($_POST['username'])) && (isset($_POST['
 while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     if ($row['email'] === $username && $row['password'] === $password) {
         echo "ca match fraté";
+        $_SESSION['connexion'] = true;
+        header("Location: test.php");
         exit;
     }
 }

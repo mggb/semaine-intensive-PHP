@@ -35,3 +35,9 @@ if(isset($_POST['submit']))  // Si le bouton s'inscrire est cliquer.
 
 
 ?>
+
+
+
+<!-- a design page d'conection --><!-- a design page d'conection -->
+<!-- a design page d'conection --><!-- a design page d'conection -->
+<!-- a design page d'conection --><!-- a design page d'conection -->

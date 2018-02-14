@@ -64,6 +64,14 @@ try {
 
   </section>
 
+<!-- a design page d'inscription -->
+  <!-- a design page d'inscription -->
+  <!-- a design page d'inscription -->
+  <!-- a design page d'inscription -->
+  <!-- a design page d'inscription -->
+  <!-- a design page d'inscription -->
+  <!-- a design page d'inscription -->
+
 
 
 

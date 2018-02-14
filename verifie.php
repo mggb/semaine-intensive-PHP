@@ -32,5 +32,6 @@ $stmt->execute([
     $_POST['dateStart'],
     $_POST['datefinish'],
     $_POST['id']
-
 ]);
+
+header('Location: test.php?id='.$conn->lastInsertId());

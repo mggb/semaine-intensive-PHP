@@ -42,3 +42,4 @@ $increment =" SELECT
                 </tr>
                 <?php endwhile;?>
             </table>
+<!-- a design page d'affichage des message --><!-- a design page des message afficher -->

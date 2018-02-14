@@ -12,8 +12,8 @@ try {
 $increment =" SELECT
            id,
            competence,
-           intitulé,
-           resumé,
+           intitule,
+           resume,
            dateStart,
            datefinish
            FROM
@@ -27,9 +27,18 @@ $increment =" SELECT
                 <tr>
                     <td><?=$row["id"]?></td>
                     <td><?=$row["competence"]?></td>
-                    <td><?=$row["intitulé"]?></td>
+                    <td><?=$row["intitule"]?></td>
+                    <td><?=$row["resume"]?></td>
                     <td><?=$row["dateStart"]?></td>
                     <td><?=$row["datefinish"]?></td>
+                    <form action="modifie.php" method="post">
+                        <button type="submit" name="button_modifie" value="<?=$row["id"]?>">modifie</button>
+
+                    </form>
+                    <form action="delete.php" method="post">
+                        <button type="submit" name="delete" value="<?=$row["id"]?>">delete</button>
+                    </form>
+
                 </tr>
                 <?php endwhile;?>
             </table>

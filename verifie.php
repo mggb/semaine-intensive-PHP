@@ -32,4 +32,4 @@ $stmt->execute([
     $_POST['id']
 ]);
 
-header('Location: test.php?id='.$conn->lastInsertId());
+header('Location: annonce.php?id='.$conn->lastInsertId());

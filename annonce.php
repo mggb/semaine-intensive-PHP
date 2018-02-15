@@ -1,5 +1,3 @@
-
-
 <?php
 session_start();
 require_once 'Conect.php';
@@ -47,20 +45,10 @@ $stmt->execute();
             <p class="licorne"><?=$row["competence"]?></p>
         </div>
         <div class="footer-annonce">
-            <p><?=$row["dateStart"]?></p>
-            <p><?=$row["datefinish"]?></p>
+            <p>date de depart:<?=$row["dateStart"]?></p>
+            <p>Date de fin:<?=$row["datefinish"]?></p>
         </div>
-        <div class="bouton">
 
-            <form action="modifie.php" method="post">
-                <button class="edit" type="submit" name="button_modifie" value="<?=$row["id"]?>">modifie</button>
-
-            </form>
-            <form action="delete.php" method="post">
-                <button class="delete" type="submit" name="delete" value="<?=$row["id"]?>">delete</button>
-            </form>
-        </div>
     <?php endwhile;?>
 </section>
 </body>
-</html>

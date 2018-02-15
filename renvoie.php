@@ -34,11 +34,12 @@ while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     if ($row['email'] === $username && $row['password'] === $password) {
         echo "ca match fraté";
         $_SESSION['connexion'] = true;
-        header("Location: test.php");
+        header("Location: annonce.php");
         exit;
     }
 }
-hearder("Location: read.php");
+header("Location: read.php");
+
 }
 
 ?>

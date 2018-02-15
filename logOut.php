@@ -9,4 +9,4 @@
 echo "sdffs";
 session_start();
 unset($_SESSION['connexion']);
-header("Location: home.php");
+header("Location: annonce.php");

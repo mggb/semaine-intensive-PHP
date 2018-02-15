@@ -1,3 +1,9 @@
+.title-annonce{
+  margin-left: 100px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .container-annonce{
   margin: 0 100px 0 100px;
   width: 81%;

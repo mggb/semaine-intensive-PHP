@@ -18,7 +18,7 @@
   font-size: 25px;
 }
 .header-annonce{
-  display: flex;
+  display: block;
 }
 .footer-annonce{
   display: flex;

@@ -1,5 +1,5 @@
 # semaine-intensive-PHP
 
-<p align="center" ># SITE MAP</p>
+## SITE MAP
 
 ![alt tag](https://github.com/ninolam/SI-PHP/blob/master/Sitemap%20.png)

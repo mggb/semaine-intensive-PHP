@@ -21,15 +21,27 @@ require_once 'Conect.php';
     <head>
         <meta charset="utf-8">
         <title>Intranet v12</title>
+        <link rel="stylesheet" href="css/connexion.css">
+        <link rel="stylesheet" href="css/reset.css">
     </head>
     <body>
-    <h1> Connection </h1>
+    <div class="logo">
+      <img class="logo" src="imgs/logogrand.png" alt="Logo FIND DEVS">
+   </div>
 
-    <form action="renvoie.php" method="post">
-        <input type="text" name="username" placeholder="identifiant"></br>
-        <input type="password" name="password" placeholder="mot de passe"></br>
-        <input type="submit" value="Se connecter" name="submit">
-    </form>
+  <div class="container-form">
+
+    <h1 class="titre">Connexion</h1>
+
+
+       <form class="formulaire-connexion" action="renvoie.php" method="post">
+          <input class="e-mail" type="email" name="username"  placeholder="Adresse E-mail">
+          <input class="password" type="password" name="password"  placeholder="Mot de passe">
+          <input class="login"type="submit" name="submit" value="Se connecter">
+      </form>
+
+
+</div>
 
     </body>
     </html>

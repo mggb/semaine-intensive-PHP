@@ -36,7 +36,7 @@ $stmt = $conn->prepare($increment);
 $stmt->execute();
 ?>
 
-<h1>Toutes les annonces</h1>
+<h1 class="title-annonce>Toutes les annonces</h1>
 <section class="container-annonce">
     <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
 
